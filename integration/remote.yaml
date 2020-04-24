@@ -1,0 +1,6 @@
+---
+# The harmony remote platform allows you to control the state of your Harmony Hub Device.
+#
+# https://www.home-assistant.io/components/harmony/
+#
+remote: !include_dir_list ../entities/remotes

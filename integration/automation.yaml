@@ -1,0 +1,11 @@
+---
+# All my automation scripts slit into two:
+#
+# File for all UI Automation scripts
+# Folder containing all the automation yaml script
+#
+# https://www.home-assistant.io/docs/automation/
+#
+
+automation: !include ../automations.yaml
+automation split: !include_dir_list ../automations

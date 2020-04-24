@@ -1,0 +1,6 @@
+---
+fan:
+# Example configuration.yaml entry
+  - platform: xiaomi_miio
+    host: !secret xiaomi_fan_host
+    token: !secret xiaomi_fan_token

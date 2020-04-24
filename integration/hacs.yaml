@@ -1,0 +1,4 @@
+---
+hacs:
+  token: !secret hacs_github_token
+  theme: true

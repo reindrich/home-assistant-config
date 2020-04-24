@@ -1,0 +1,6 @@
+---
+# With Home Assistant Cloud, you can connect your Home Assistant instance in a few simple clicks to Amazon Alexa.
+#
+# https://www.home-assistant.io/components/alexa/
+#
+alexa:

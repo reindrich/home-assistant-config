@@ -1,0 +1,5 @@
+alexa_media:
+  accounts:
+    - email: !secret amazon_alexa_account
+      password: !secret amazon_alexa_password
+      url: amazon.com

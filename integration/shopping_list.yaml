@@ -1,0 +1,6 @@
+---
+# The Shopping List Card allows you to add, edit, check-off, and clear items from your shopping list.
+#
+# https://www.home-assistant.io/lovelace/shopping-list/
+#
+shopping_list:
