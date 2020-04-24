@@ -1,0 +1,10 @@
+---
+# Entity configuration for Google Assistant.
+#
+# I use this to customize how the device shows up in Google Assistant.
+#
+# https://www.home-assistant.io/integrations/google_assistant/#entity_config
+#
+switch.baby_room_clouds_on_the_wall:
+  name: Baby Room Clouds on the Wall
+  display_categories: SMARTPLUG

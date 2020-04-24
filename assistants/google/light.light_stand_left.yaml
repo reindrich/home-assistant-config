@@ -1,0 +1,22 @@
+---
+# Entity configuration for Google Assistant.
+#
+# I use this to customize how the device shows up in Google Assistant.
+#
+# https://www.home-assistant.io/integrations/google_assistant/#entity_config
+#
+light.living_room_small_light:
+  name: Living Room Window light
+  aliases:
+    - living room window light
+    - living room big stant light
+    - living room big light
+    - light next to the window 
+    - window light
+    - woonkamer grote licht
+    - woonkamer raam licht
+    - licht naast de raam
+    - licht naar het raam
+    - raam licht in de woonkamer
+    - raam licht 
+  room: Living Room
