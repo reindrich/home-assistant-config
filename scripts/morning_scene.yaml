@@ -1,0 +1,29 @@
+---
+morning_script:
+  sequence:
+    - service: light.turn_on
+      data:
+        entity_id: 
+          - light.living_room_small_light
+
+    - service: script.turn_on
+      data:
+        entity_id: script.tv_turn_on
+    
+    - delay: '00:00:02'
+
+    - service: script.turn_on
+      data:  
+        entity_id: script.ziggo_box_onoff_toggle
+
+    - delay: '00:00:02'
+
+    - service: script.turn_on
+      data:
+        entity_id: script.input_hdmi_1_source_tv
+
+    - delay: '00:00:02'
+
+    - service: script.turn_on
+      data:
+        entity_id: script.ziggo_box_number_4
