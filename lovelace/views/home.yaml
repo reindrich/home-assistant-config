@@ -1,0 +1,363 @@
+---
+# Default view
+id: home
+title: Home
+icon: mdi:home-assistant
+theme: dark-mode
+path: home
+badges:
+  - sun.sun
+  - sensor.dark_sky_temperature
+  - sensor.date
+  - binary_sensor.workday_sensor
+  - binary_sensor.updater
+cards:
+  - type: entity-filter
+    card:
+      type: glance
+      title: Devices that are "On"
+      tap_action:
+        action: toggle
+    state_filter:
+      - "on"
+      - "playing"
+      - "armed_away"
+      - "armed_home"
+      - "triggered"
+      - "pending"
+    entities:
+      # General
+      - alarm_control_panel.home_alarm
+      # Kitchen
+      - media_player.kitchen_next_hub
+      # Living Room
+      - light.living_room_small_light
+      - light.living_room_window_stand_light
+      - light.living_room_dining_table_light
+      - light.living_room_hue_go_light
+      - switch.twinkly
+      - media_player.living_room_tv
+      - media_player.living_room
+      - media_player.living_room_speaker
+      - media_player.reindrichs_echo_dot
+      # Study
+      - light.study_ceiling_light
+      - switch.study_desk_lamp
+      - switch.study_wifi_plug
+      - media_player.office_tv
+      - media_player.study_room_echo_dot
+      # Bedroom
+      - light.big_bed_room_light
+      - switch.Master_Bed_Room_Fam_Switch
+      - switch.bedroom_night_lamp
+      - switch.master_bedroom_cloud_light
+      - switch.bedroom_light_switch
+      - switch.fan
+      - switch.airco_bedroom
+      - media_player.reindrich_s_echo
+      # Bathroom
+      # Baby Room
+      - light.baby_room_ceiling_cloud_light
+      - switch.baby_room_clouds_on_the_wall
+      - media_player.echo_dot_baby_room
+      
+  - type: entities
+    title: Scène
+    show_header_toggle: false
+    entities:
+      - input_boolean.morning_scene
+      - input_boolean.good_night
+      - input_boolean.baby_feeding_time
+      - scene.out_of_home
+
+  - type: entity-filter
+    state_filter:
+      - "home"
+    card:
+      type: glance
+      title: Who's home?
+      tap_action:
+       action: none
+    entities:
+      - person.mary_ann_2
+      - person.reindrich
+
+  - type: entities
+    title: Living Room
+    show_header_toggle: true
+    entities:
+      - light.living_room_small_light
+      - light.living_room_window_stand_light
+      - light.living_room_dining_table_light
+      - light.living_room_hue_go_light
+      - switch.twinkly     
+      - media_player.living_room_tv
+      - media_player.living_room
+      - media_player.living_room_speaker
+      - media_player.reindrichs_echo_dot
+      - sensor.living_room_temperature
+      - sensor.living_room_humidity
+      - sensor.living_room_pressure
+
+  - type: entities
+    title: Bedroom
+    show_header_toggle: true
+    entities:
+      - switch.bedroom_night_lamp
+      - switch.master_bedroom_cloud_light
+      - switch.bedroom_light_switch
+      - media_player.reindrich_s_echo
+      - entity: switch.fan
+        name: Fan
+        tap_action:
+          action: toggle
+      - entity: switch.fan_swing
+        name: Fan Swing
+        tap_action:
+          action: toggle
+      - entity: switch.airco_bedroom
+        name: Airco
+        icon: 'mdi:air-conditioner'
+        tab_action:
+          action: toggle
+      - sensor.master_bedroom_temperature
+      - sensor.master_bedroom_humidity
+      - sensor.master_bedroom_pressure
+
+  - type: entities
+    title: Baby Room
+    show_header_toggle: true
+    entities:
+      - light.baby_room_ceiling_cloud_light
+      - switch.baby_room_clouds_on_the_wall
+      - media_player.echo_dot_baby_room
+      - binary_sensor.motion_sensor
+      - sensor.baby_room_temperature
+      - sensor.baby_room_humidity
+      - sensor.baby_room_pressure
+
+  - type: entities
+    title: Kitchen
+    show_header_toggle: true
+    entities:
+      - media_player.kitchen_next_hub
+      - binary_sensor.kitchen_motion_sensor
+      - sensor.kitchen_lightlevel
+    
+  - type: entities
+    title: Bathroom
+    show_header_toggle: false
+    entities:
+      - sensor.bathroom_temperature
+      - sensor.bathroom_humidity
+      - sensor.bathroom_pressure
+
+  - type: entities
+    title: Study
+    show_header_toggle: true
+    entities:
+      - light.study_ceiling_light
+      - switch.study_desk_lamp
+      - binary_sensor.study_motion_sensor
+      - entity: switch.study_wifi_plug
+        tap_action:
+          action: toggle
+      - media_player.office_tv
+      - media_player.study_room_echo_dot
+
+  - type: weather-forecast
+    entity: weather.dark_sky
+
+  - type: glance
+    title: TV Living Room Remote
+    show_header_toggle: false
+    show_state: false
+    show_name: true
+    entities:
+      - entity: script.tv_turn_on
+        name: "On"
+        tap_action:
+          action: toggle
+      - entity: script.tv_turn_off
+        name: "Off"
+        tap_action:
+          action: toggle
+      - entity: script.tv_mute
+        name: Mute
+        tap_action:
+          action: toggle
+      - entity: script.tv_volume_up
+        name: Volume Up
+        tap_action:
+          action: toggle
+      - entity: script.tv_volume_down
+        name: Volume Down
+        tap_action:
+          action: toggle
+      - entity: script.tv_channel_up
+        name: Channel Up
+        tap_action:
+          action: toggle
+      - entity: script.tv_channel_down
+        name: Channel Down
+        tap_action:
+          action: toggle
+      - entity: script.tv_channel_prev
+        name: Previous Channel
+        tap_action:
+          action: toggle
+      - entity: script.tv_channel_list
+        name: Channel List
+        tap_action:
+          action: toggle
+      - entity: script.home_button_tv
+        name: Home
+        tap_action:
+          action: toggle
+      - entity: script.select_button_tv
+        name: Select
+        tap_action:
+          action: toggle
+      - entity: script.return_button_tv
+        name: Return
+        tap_action:
+          action: toggle
+      - entity: script.exit_button_tv
+        name: Exit
+        tap_action:
+          action: toggle
+      - entity: script.direction_up_button_tv
+        name: Up
+        tap_action:
+          action: toggle
+      - entity: script.direction_down_button_tv
+        name: Down
+        tap_action:
+          action: toggle
+      - entity: script.direction_left_button_tv
+        name: Left
+        tap_action:
+          action: toggle
+      - entity: script.direction_right_button_tv
+        name: Right
+        tap_action:
+          action: toggle
+      - entity: script.input_hdmi_1_source_tv
+        name: HDMI 1
+        tap_action:
+          action: toggle
+      - entity: script.input_hdmi_2_source_tv
+        name: HDMI 2
+        tap_action:
+          action: toggle
+      - entity: script.input_hdmi_3_source_tv
+        name: HDMI 3
+        tap_action:
+          action: toggle
+      - entity: script.input_hdmi_4_source_tv
+        name: HDMI 4
+        tap_action:
+          action: toggle
+      - entity: script.guide_button_tv
+        name: Guide
+        tap_action:
+          action: toggle
+      - entity: script.info_button_tv
+        name: Info
+        tap_action:
+          action: toggle
+      - entity: script.more_button_tv
+        name: More
+        tap_action:
+          action: toggle
+      - entity: script.smart_hub_button_tv
+        name: SmartHub
+        tap_action:
+          action: toggle
+      - entity: script.source_button_tv
+        name: Source
+        tap_action:
+          action: toggle
+      - entity: script.sports_button_tv
+        name: Sports
+        tap_action:
+          action: toggle
+      - entity: script.tools_button_tv
+        name: Tools
+        tap_action:
+          action: toggle
+ 
+
+  - type: glance
+    title: Ziggo Media Box Remote
+    show_state: false
+    show_name: true
+    entities:
+      - entity: script.ziggo_box_onoff_toggle
+        name: On/Off
+        tap_action:
+          action: toggle
+      - entity: script.ziggo_box_channel_up
+        name: Channel Up
+        tap_action:
+          action: toggle
+      - entity: script.ziggo_box_channel_down
+        name: Channel Down
+        tap_action:
+          action: toggle
+      - entity: script.ziggo_box_number_0
+        name: 0
+        tap_action:
+          action: toggle
+      - entity: script.ziggo_box_number_1
+        name: 1
+        tap_action:
+          action: toggle
+      - entity: script.ziggo_box_number_2
+        name: 2
+        tap_action:
+          action: toggle
+      - entity: script.ziggo_box_number_3
+        name: 3
+        tap_action:
+          action: toggle
+      - entity: script.ziggo_box_number_4
+        name: 4
+        tap_action:
+          action: toggle
+      - entity: script.ziggo_box_number_5
+        name: 5
+        tap_action:
+          action: toggle
+      - entity: script.ziggo_box_number_6
+        name: 6
+        tap_action:
+          action: toggle
+      - entity: script.ziggo_box_number_7
+        name: 7
+        tap_action:
+          action: toggle
+      - entity: script.ziggo_box_number_8
+        name: 8
+        tap_action:
+          action: toggle
+      - entity: script.ziggo_box_number_9
+        name: 9
+        tap_action:
+          action: toggle    
+
+  - type: media-control
+    name: Sonos
+    entity: media_player.living_room
+
+  - type: custom:xiaomi-vacuum-card
+    name: Max Verstappen
+    entity: vacuum.roborock_vacuum_cleaner
+    image: /local/lovelace/vacuum.png
+
+  - type: entities
+    title: Afval Den Haag
+    show_header_toggle: false
+    entities:
+      - entity: sensor.denhaag_afval_ophalen_restafval
+      - entity: sensor.denhaag_afval_ophalen_papier

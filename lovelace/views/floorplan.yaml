@@ -1,0 +1,285 @@
+title: Floorplan
+path: floorplan
+panel: true
+icon: mdi:floor-plan
+cards:
+  - type: picture-elements
+    image: /local/lovelace/floorplan_our_house_without_lights.png
+    elements:
+
+# Front Door Hallway
+      - type: state-icon
+        entity: binary_sensor.front_door_sensor
+        icon: 'mdi:door'
+        style:
+          top: 43%
+          left: 94%
+          --iron-icon-stroke-color: "#969696"
+          border-radius: 50%
+          text-align: center
+          background-color: "rgba(255, 255, 255, 0.3)"
+
+      - type: state-icon
+        entity: binary_sensor.front_door_motion_sensor
+        icon: 'mdi:run'
+        style:
+          top: 43%
+          left: 79%
+          --iron-icon-stroke-color: "#969696"
+          border-radius: 50%
+          text-align: center
+          background-color: "rgba(255, 255, 255, 0.3)"
+
+# Living Room
+      - type: state-icon
+        tap_action:
+          action: toggle
+        entity: light.living_room_dining_table_light
+        style:
+          top: 56%
+          left: 49%
+          --iron-icon-stroke-color: "#969696"
+          border-radius: 50%
+          text-align: center
+          background-color: "rgba(255, 255, 255, 0.3)"
+
+      - type: state-icon
+        entity: media_player.living_room_tv
+        icon: 'mdi:television'
+        style:
+          top: 52%
+          left: 80%
+          --iron-icon-stroke-color: "#969696"
+          border-radius: 50%
+          text-align: center
+          background-color: "rgba(255, 255, 255, 0.3)"
+
+      - type: state-icon
+        tap_action:
+          action: toggle
+        entity: switch.twinkly
+        style:
+          top: 52%
+          left: 73%
+          --iron-icon-stroke-color: "#969696"
+          border-radius: 50%
+          text-align: center
+          background-color: "rgba(255, 255, 255, 0.3)"
+
+      - type: icon
+        entity: binary_sensor.living_room_smoke_detector_sensor
+        icon: 'mdi:smoke-detector'
+        style:
+          top: 68%
+          left: 73%
+          --iron-icon-stroke-color: "#969696"
+          --iron-icon-height: 40px
+          --iron-icon-width: 40px 
+          border-radius: 50%
+          text-align: center
+          background-color: "rgba(255, 255, 255, 0.3)"
+
+      - type: icon
+        entity: binary_sensor.living_room_carbon_monoxide_detector_sensor
+        icon: 'mdi:molecule-co'
+        style:
+          top: 68%
+          left: 76.5%
+          --iron-icon-stroke-color: "#000000"
+          --iron-icon-height: 40px
+          --iron-icon-width: 40px 
+          border-radius: 50%
+          text-align: center
+          background-color: "rgba(255, 255, 255, 0.3)"
+
+      - type: state-icon
+        title: Living Room Small Light
+        tap_action:
+          action: toggle
+        entity: light.living_room_small_light
+        style:
+          top: 82%
+          left: 83%
+          --iron-icon-stroke-color: "#969696"
+          border-radius: 50%
+          text-align: center
+          background-color: "rgba(255, 255, 255, 0.3)"
+
+      - type: state-icon
+        tap_action:
+          action: toggle
+        entity: light.living_room_window_stand_light
+        style:
+          top: 82%
+          left: 89%
+          --iron-icon-stroke-color: "#969696"
+          border-radius: 50%
+          text-align: center
+          background-color: "rgba(255, 255, 255, 0.3)"
+    
+# Master Bedroom 
+      - type: state-icon
+        tap_action:
+          action: toggle
+        entity: switch.bedroom_light_switch
+        style:
+          top: 70%
+          left: 30%
+          --iron-icon-stroke-color: "#969696"
+          border-radius: 50%
+          text-align: center
+          background-color: "rgba(255, 255, 255, 0.3)"
+
+      - type: state-icon
+        tap_action:
+          action: toggle
+        entity: switch.bedroom_night_lamp
+        icon: 'mdi:desk-lamp'
+        style:
+          top: 78%
+          left: 13.5%
+          --iron-icon-stroke-color: "#969696"
+          border-radius: 50%
+          text-align: center
+          background-color: "rgba(255, 255, 255, 0.3)"
+
+      - type: state-icon
+        tap_action:
+          action: toggle
+        entity: switch.master_bedroom_cloud_light
+        icon: 'mdi:cloud'
+        style:
+          top: 83%
+          left: 36%
+          --iron-icon-stroke-color: "#969696"
+          border-radius: 50%
+          text-align: center
+          background-color: "rgba(255, 255, 255, 0.3)"
+
+# Study
+      - type: state-icon
+        tap_action:
+          action: toggle
+        entity: light.study_ceiling_light
+        style:
+          top: 29%
+          left: 73%
+          --iron-icon-stroke-color: "#969696"
+          border-radius: 50%
+          text-align: center
+          background-color: "rgba(255, 255, 255, 0.3)"
+
+      - type: state-icon
+        tap_action:
+          action: toggle
+        entity: switch.study_desk_lamp
+        icon: 'mdi:desk-lamp'
+        style:
+          top: 25%
+          left: 59%
+
+      - type: state-icon
+        entity: media_player.office_tv
+        icon: 'mdi:television'
+        style:
+          top: 35.5%
+          left: 75%
+          --iron-icon-stroke-color: "#969696"
+          border-radius: 50%
+          text-align: center
+          background-color: "rgba(255, 255, 255, 0.3)"
+
+      - type: state-icon
+        entity: binary_sensor.study_motion_sensor
+        icon: 'mdi:run'
+        style:
+          top: 35.5%
+          left: 59%
+          --iron-icon-stroke-color: "#969696"
+          border-radius: 50%
+          text-align: center
+          background-color: "rgba(255, 255, 255, 0.3)"
+
+# Baby Room
+      - type: state-icon
+        tap_action:
+          action: toggle
+        entity: light.baby_room_ceiling_cloud_light
+        style:
+          top: 30%
+          left: 23%
+          --iron-icon-stroke-color: "#969696"
+          border-radius: 50%
+          text-align: center
+          background-color: "rgba(255, 255, 255, 0.3)"
+
+      - type: state-icon
+        tap_action:
+          action: toggle
+        entity: switch.baby_room_clouds_on_the_wall
+        icon: 'mdi:cloud'
+        style:
+          top: 15%
+          left: 22%
+          --iron-icon-stroke-color: "#969696"
+          border-radius: 50%
+          text-align: center
+          background-color: "rgba(255, 255, 255, 0.3)"
+
+      - type: state-icon
+        entity: binary_sensor.motion_sensor
+        icon: 'mdi:run'
+        style:
+          top: 35.5%
+          left: 30%
+          --iron-icon-stroke-color: "#969696"
+          border-radius: 50%
+          text-align: center
+          background-color: "rgba(255, 255, 255, 0.3)"
+
+      - type: state-label
+        entity: sensor.baby_room_temperature
+        style:
+          top: 22%
+          left: 15.5%
+          --iron-icon-stroke-color: "#969696"
+          border-radius: 50%
+          text-align: center
+          background-color: "rgba(0,0,255,0.3)"
+
+      - type: state-label
+        entity: sensor.baby_room_humidity
+        style:
+          top: 29%
+          left: 15.5%
+          --iron-icon-stroke-color: "#969696"
+          border-radius: 50%
+          text-align: center
+          background-color: "rgba(0,0,255,0.3)"
+
+# Scene
+      - type: service-button
+        title: Sleep Scene
+        service: input_boolean.turn_on
+        service_data:
+          entity_id: input_boolean.good_night
+        style:
+          top: 93%
+          left: 20%
+          --iron-icon-stroke-color: "#969696"
+          # border-radius: 70%
+          text-align: center
+          background-color: "rgba(255, 255, 255, 0.9)"
+
+      - type: service-button
+        title: Baby Feeding Time
+        service: input_boolean.turn_on
+        service_data:
+          entity_id: input_boolean.baby_feeding_time
+        style:
+          top: 93%
+          left: 70%
+          --iron-icon-stroke-color: "#969696"
+          # border-radius: 70%
+          text-align: center
+          background-color: "rgba(255, 255, 255, 0.9)"

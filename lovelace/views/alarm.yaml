@@ -1,0 +1,13 @@
+---
+# Alarm view that will be used on a tablet
+id: Alarm_view
+title: Alarm View
+path: alarm
+icon: 'mdi:alarm-bell'
+cards:
+  - type: alarm-panel
+    name: House Alarm
+    entity: alarm_control_panel.home_alarm
+    states:
+      - arm_home
+      - arm_away

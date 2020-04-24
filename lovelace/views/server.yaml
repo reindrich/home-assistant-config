@@ -1,0 +1,93 @@
+---
+#Server Monitoring
+id: server_monitoring
+title: Servers Monitoring
+path: servers
+icon: 'mdi:server-security'
+badges: 
+  - sensor.potential_breaking_changes
+cards:
+  - type: entities
+    title: Home Assistant Status
+    show_header_toggle: false
+    entities:
+      - entity: sensor.disk_free_home
+      - entity: sensor.processor_use
+      - entity: sensor.memory_free
+      - entity: sensor.last_boot
+      - entity: sensor.snapshot_backup
+      - entity: binary_sensor.snapshots_stale
+
+  - type: entities
+    title: Battery Sensor Level
+    show_header_toggle: false
+    entities:
+# Baby Room
+      - type: 'custom:battery-entity'
+        entity: sensor.baby_room_motion_sensor_battery_level
+      - type: 'custom:battery-entity'
+        entity: sensor.baby_room_temperature_battery_level
+      - type: 'custom:battery-entity'
+        entity: sensor.baby_room_left_window_sensor_battery_level
+      - type: 'custom:battery-entity'
+        entity: sensor.baby_room_right_window_sensor_battery_level
+      - type: 'custom:battery-entity'
+        entity: sensor.dimmer_switch_battery_level
+# Bathroom
+      - type: 'custom:battery-entity'
+        entity: sensor.bathroom_multi_sensor_battery_level
+# Front Door 
+      - type: 'custom:battery-entity'
+        entity: sensor.front_door_motion_sensor_battery_level
+      - type: 'custom:battery-entity'
+        entity: sensor.front_door_openclose_battery_level
+      - type: 'custom:battery-entity'
+        entity: sensor.front_door_vibration_sensor_battery_level
+# Living Room
+      - type: 'custom:battery-entity'
+        entity: sensor.living_room_vibration_battery_level
+      - type: 'custom:battery-entity'
+        entity: sensor.living_room_multi_sensor_battery_level
+# Master Bedroom
+      - type: 'custom:battery-entity'
+        entity: sensor.master_bedroom_multi_sensor_battery_level
+      - type: 'custom:battery-entity'
+        entity: sensor.reindrich_switch_next_to_bed_battery_level
+      - type: 'custom:battery-entity'
+        entity: sensor.maryann_switch_next_to_bed_battery_level
+# Study Room       
+      - type: 'custom:battery-entity'
+        entity: sensor.study_motion_sensor_battery_level
+      - type: 'custom:battery-entity'
+        entity: sensor.study_room_window_sensor_batery_level
+# Kitchen
+      - type: 'custom:battery-entity'
+        entity: sensor.kitchen_motion_sensor_battery_level
+
+  - type: conditional
+    conditions:
+      - entity: binary_sensor.snapshots_stale
+        state_not: 'False'
+    card:
+      type: markdown
+      content: >-
+        Snapshots are stale! Please visit the "Hass.io Google Drive Backup" add-on
+        status page for details.
+      title: Stale Snapshots!`
+
+  - type: entities        
+    title: Certificate Expiry
+    show_header_toggle: false
+    entities:
+      - entity: sensor.cert_expiry_noobla_com
+
+  - type: entities
+    title: Hardware
+    show_header_toggle: false
+    entities:
+      - entity: switch.study_wifi_plug
+        tap_action:
+          action: toggle 
+
+  - type: shopping-list
+    title: Things todo for my Home Automation
