@@ -11,6 +11,7 @@ __pycache__
 *.db
 *.db-shm
 *.db-wal
+*.disabled
 *.log
 *.pyc
 
@@ -21,8 +22,8 @@ deps
 node-red
 
 # Specific file ignores
-.DS_Store
 .config_entries.json
+.DS_Store
 .homekit.state
 .ios.conf
 .shopping_list.json
@@ -34,6 +35,9 @@ core
 html5_push_registrations.conf
 ip_bans.yaml
 known_devices.yaml
+lovelace/views/family.yaml
+lovelace/views/sensors.yaml
+lovelace/views/test.yaml
 options.xml
 OZW_Log.txt
 pyozw.sqlite
