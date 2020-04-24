@@ -1,0 +1,8 @@
+---
+# The pushbullet notification platform sends messages to Pushbullet, 
+# a free service to send information between your phones, browsers, and friends.
+#
+# https://www.home-assistant.io/components/notify.pushbullet/
+#
+platform: pushbullet
+api_key: !secret pushbullet_api_key
