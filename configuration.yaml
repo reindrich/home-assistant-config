@@ -1,0 +1,27 @@
+---
+# Welcome to my Home Assistant configuration. 
+# This is my third or fourth mayor refactoring, but who's counting ;).
+#
+# This current version is using the concept of packages. 
+# The concept that I wanted to go for was that each file only does one thing.
+# My configuration is heavily inpired by Frank Nijhofs (https://github.com/frenck/home-assistant-config) configuration.
+#
+homeassistant:
+  # Name of my Home Assistant instance.
+  name: Home of the G's
+
+  # Location of our house
+  latitude: !secret latitude_home
+  longitude: !secret longitude_home
+
+  # This is being used for weather and sunrise.
+  elevation: !secret elevation_home
+
+  # Unit System in Europe is Metric 
+  unit_system: metric
+
+  # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+  time_zone: Europe/Amsterdam
+
+  # Load packages
+  packages: !include_dir_named integration
