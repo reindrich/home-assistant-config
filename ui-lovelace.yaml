@@ -1,0 +1,12 @@
+---
+title: The House of The G's
+resources: !include_dir_list lovelace/resources
+views:
+  - !include lovelace/views/home.yaml
+  - !include lovelace/views/floorplan.yaml
+  - !include lovelace/views/alarm.yaml
+  - !include lovelace/views/sensors.yaml
+  - !include lovelace/views/media.yaml
+  - !include lovelace/views/family.yaml
+  - !include lovelace/views/server.yaml
+  - !include lovelace/views/test.yaml
