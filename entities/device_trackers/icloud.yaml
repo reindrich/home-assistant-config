@@ -1,0 +1,10 @@
+---
+# The icloud platform allows you to detect presence using the iCloud service. 
+# iCloud allows users to track their location on iOS devices.
+#
+# https://www.home-assistant.io/components/device_tracker.icloud/
+#
+platform: icloud
+username: !secret icloud_username
+password: !secret icloud_password
+account_name: !secret icloud_account_name
