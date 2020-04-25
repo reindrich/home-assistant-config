@@ -1,0 +1,5 @@
+- name: Night Time
+  entities:
+    switch.bedroom_night_lamp: on
+    switch.baby_room_clouds_on_the_wall: on
+    light.living_room_small_light: on

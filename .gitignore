@@ -20,6 +20,11 @@ __pycache__
 .storage
 deps
 node-red
+panels
+python_scripts
+entities/cameras
+entities/groups
+entities/persons
 
 # Specific file ignores
 .config_entries.json
@@ -34,6 +39,7 @@ alexa_media.*.pickle
 core
 html5_push_registrations.conf
 ip_bans.yaml
+integration/alarm.yaml
 known_devices.yaml
 lovelace/views/family.yaml
 lovelace/views/sensors.yaml

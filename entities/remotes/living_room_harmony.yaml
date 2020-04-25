@@ -1,0 +1,8 @@
+---
+# The harmony remote platform allows you to control the state of your Harmony Hub Device.
+#
+# https://www.home-assistant.io/components/harmony/
+#
+platform: harmony
+name: Living Room Harmony
+host: !secret harmony_host

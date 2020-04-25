@@ -1,0 +1,11 @@
+---
+# This is my living room Samsung TV.
+#
+# https://www.home-assistant.io/components/media_player.samsungtv/
+#
+platform: samsungtv_custom
+name: Living Room TV
+host: !secret media_player_samsungtv_livingroom_host
+port: 8001
+mac: !secret media_player_samsungtv_livingroom_mac
+sourcelist: '{"Ziggo": "KEY_HDMI1", "Camera": "KEY_HDMI3"}'

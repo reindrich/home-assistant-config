@@ -1,0 +1,5 @@
+name: !secret reindrich_work_name 
+latitude: !secret reindrich_work_latitude
+longitude: !secret reindrich_work_longtitude
+radius: 50
+icon: mdi:worker

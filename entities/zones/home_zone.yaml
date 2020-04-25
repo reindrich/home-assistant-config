@@ -1,0 +1,10 @@
+---
+# This is a zone that has been set as my home zone, this will be used for my automations
+#
+# https://www.home-assistant.io/components/zone/
+#
+name: Home
+latitude: !secret latitude_home
+longitude: !secret longitude_home
+radius: 100
+icon: mdi:home

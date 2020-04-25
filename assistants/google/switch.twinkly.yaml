@@ -1,0 +1,19 @@
+---
+# Entity configuration for Google Assistant.
+#
+# I use this to customize how the device shows up in Google Assistant.
+#
+# https://www.home-assistant.io/integrations/google_assistant/#entity_config
+#
+light.hue_go_1:
+  name: TV Stand LED lights
+  aliases:
+    - living room tv stand led light
+    - living room tv stand led lights
+    - tv stand led light
+    - woonkamer led lampjes
+    - tv kast lep lampen
+    - tv meubel licht 
+    - tv kast licht
+    - tv stand lights 
+  room: Living Room

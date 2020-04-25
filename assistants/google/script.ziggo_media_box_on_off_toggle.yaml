@@ -1,0 +1,16 @@
+---
+# Entity configuration for Google Assistant.
+#
+# I use this to customize how the device shows up in Google Assistant.
+#
+# https://www.home-assistant.io/integrations/google_assistant/#entity_config
+#
+script.ziggo_box_onoff_toggle:
+  name: Ziggo Media Box
+  aliases:
+    - ziggo media box on off toggle
+    - ziggo box
+    - ziggo media box
+    - horizon box
+    - cable box
+  room: Living Room

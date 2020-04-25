@@ -1,0 +1,20 @@
+---
+# Entity configuration for Google Assistant.
+#
+# I use this to customize how the device shows up in Google Assistant.
+#
+# https://www.home-assistant.io/integrations/google_assistant/#entity_config
+#
+light.hue_go_1:
+  name: Living Room Hue Go light
+  aliases:
+    - living room spot light
+    - living room hue go light
+    - living room hue light
+    - living room hue
+    - half moon
+    - half moon in the living room
+    - woonkamer hue licht
+    - woonkamer hue lamp
+    - halve maan
+  room: Living Room

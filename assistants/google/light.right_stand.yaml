@@ -1,0 +1,18 @@
+---
+# Entity configuration for Google Assistant.
+#
+# I use this to customize how the device shows up in Google Assistant.
+#
+# https://www.home-assistant.io/integrations/google_assistant/#entity_config
+#
+light.living_room_small_light:
+  name: Living Room small light
+  aliases:
+    - living room small light
+    - woonkamer keline licht
+    - woonkamer lampje
+    - kleine licht in woonkamer
+    - living room small lamp
+    - small lamp
+    - small living room light
+  room: Living Room
