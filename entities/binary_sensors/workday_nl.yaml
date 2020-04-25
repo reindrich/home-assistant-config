@@ -1,0 +1,17 @@
+---
+# The workday binary sensor indicates, whether the current day is a workday or not.
+#
+# https://www.home-assistant.io/components/binary_sensor.workday/
+#
+platform: workday
+country: NL
+add_holidays: 
+    - '2020-04-28'
+    - '2020-05-05'
+    - '2020-05-21'
+    - '2020-06-01'
+    - '2020-12-24'
+    - '2020-12-25'
+    - '2020-12-26'
+    - '2020-12-31'
+    - '2021-01-01'

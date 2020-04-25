@@ -1,0 +1,14 @@
+---
+# The mqtt binary sensor platform uses an MQTT message payload to set the binary sensor to one of two states: on or off.
+# Rule in rf bridge is rule one
+#
+# https://www.home-assistant.io/components/binary_sensor.mqtt/
+#
+platform: mqtt
+name: "Living Room Water Sensor"
+state_topic: "tele/RF_Bridge/RESULT"
+value_template: '{{value_json.RfReceived.Data}}'
+qos: 1
+payload_on: '585C12'
+payload_off: '585C12E'
+device_class: moisture
