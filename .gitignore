@@ -25,6 +25,7 @@ python_scripts
 entities/cameras
 entities/groups
 entities/persons
+www/custom_ui
 
 # Specific file ignores
 .config_entries.json
@@ -48,7 +49,12 @@ lovelace/views/test.yaml
 options.xml
 OZW_Log.txt
 pyozw.sqlite
+scripts/scripts.yaml
 secrets.yaml
+www/lovelace/CMPPC-423.jpg
+www/lovelace/floorplan_our_house_without_lights.png
+www/lovelace/floorplan_our_house.png
+www/lovelace/IMG_1386.JPG
 zwcfg_*
 zwscene.xml
 
