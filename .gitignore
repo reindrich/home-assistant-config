@@ -37,6 +37,7 @@ entities/persons
 .uuid
 alexa_media.*.pickle
 core
+customizations/person.yaml
 html5_push_registrations.conf
 ip_bans.yaml
 integration/alarm.yaml

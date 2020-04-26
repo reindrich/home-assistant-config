@@ -1,0 +1,4 @@
+# Living Room
+switch.twinkly:
+  friendly_name: TV stand LED lights
+  icon: mdi:led-strip

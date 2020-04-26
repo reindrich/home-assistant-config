@@ -1,0 +1,7 @@
+# Switches
+switch.Single_Switch:
+  icon: mdi:toggle-switch
+switch.Left_Switch:
+  icon: mdi:toggle-switch
+switch.Right_Switch:
+  icon: mdi:toggle-switch-off

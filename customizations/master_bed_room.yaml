@@ -1,0 +1,16 @@
+# Master Bedroom
+switch.master_bed_room_fam_switch:
+  friendly_name: Outlet
+  icon: mdi:power-socket-eu
+switch.bedroom_night_lamp:
+  friendly_name: Night Lamp
+  icon: mdi:weather-night
+switch.fan:
+  friendly_name: Fan
+  icon: mdi:fan
+switch.fan_swing:
+  friendly_name: Fan Swing
+  icon: mdi:rotate-3d
+switch.master_bedroom_cloud_light:
+  friendly_name: Master Bedroom Clouds On The Wall
+  icon: 'mdi:cloud'

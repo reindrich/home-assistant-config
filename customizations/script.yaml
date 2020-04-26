@@ -1,0 +1,85 @@
+# Tv Samsung
+script.tv_turn_on:
+  icon: mdi:television
+script.tv_turn_off:
+  icon: mdi:television-off
+script.tv_mute:
+  icon: mdi:volume-off
+script.tv_volume_up:
+  icon: mdi:volume-plus
+script.tv_volume_down:
+  icon: mdi:volume-minus
+script.tv_channel_up:
+  icon: mdi:arrow-up-drop-circle-outline
+script.tv_channel_down:
+  icon: mdi:arrow-down-drop-circle-outline
+script.tv_channel_prev:
+  icon: mdi:skip-previous-circle
+script.tv_channel_list:
+  icon: mdi:playlist-play
+script.home_button_tv:
+  icon: mdi:home-circle
+script.select_button_tv:
+  icon: mdi:check-circle
+script.return_button_tv:
+  icon: mdi:keyboard-return
+script.direction_down_button_tv:
+  icon: mdi:arrow-down-circle
+script.direction_left_button_tv:
+  icon: mdi:arrow-left-circle
+script.direction_right_button_tv:
+  icon: mdi:arrow-right-circle
+script.direction_up_button_tv:
+  icon: mdi:arrow-up-circle
+script.input_hdmi_1_source_tv:
+  icon: mdi:video-input-hdmi
+script.input_hdmi_2_source_tv:
+  icon: mdi:video-input-hdmi
+script.input_hdmi_3_source_tv:
+  icon: mdi:video-input-hdmi
+script.input_hdmi_4_source_tv:
+  icon: mdi:video-input-hdmi
+script.exit_button_tv:
+  icon: mdi:exit-to-app
+script.guide_button_tv:
+  icon: mdi:television-guide
+script.info_button_tv:
+  icon: mdi:information
+script.more_button_tv:
+  icon: mdi:dots-horizontal-circle
+script.smart_hub_button_tv:
+  icon: mdi:hubspot
+script.source_button_tv:
+  icon: mdi:video-input-component
+script.sports_button_tv:
+  icon: mdi:basketball
+script.tools_button_tv:
+  icon: mdi:toolbox
+
+# Ziggo Media Box
+script.ziggo_box_onoff_toggle:
+  icon: mdi:toggle-switch
+script.ziggo_box_channel_up:
+  icon: mdi:arrow-up-drop-circle-outline
+script.ziggo_box_channel_down:
+  icon: mdi:arrow-down-drop-circle-outline
+script.ziggo_box_number_0:
+  icon: mdi:numeric-0-circle-outline
+script.ziggo_box_number_1:
+  icon: mdi:numeric-1-circle-outline
+script.ziggo_box_number_2:
+  icon: mdi:numeric-2-circle-outline
+script.ziggo_box_number_3:
+  icon: mdi:numeric-3-circle-outline
+script.ziggo_box_number_4:
+  icon: mdi:numeric-4-circle-outline
+script.ziggo_box_number_5:
+  icon: mdi:numeric-5-circle-outline
+script.ziggo_box_number_6:
+  icon: mdi:numeric-6-circle-outline
+script.ziggo_box_number_7:
+  icon: mdi:numeric-7-circle-outline
+script.ziggo_box_number_8:
+  icon: mdi:numeric-8-circle-outline
+script.ziggo_box_number_9:
+  icon: mdi:numeric-9-circle-outline

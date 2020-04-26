@@ -1,0 +1,4 @@
+# Bathroom
+switch.Bathroom_Big_Light:
+  friendly_name: Bathroom Big Light
+  icon: mdi:lightbulb

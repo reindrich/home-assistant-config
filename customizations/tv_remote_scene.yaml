@@ -1,0 +1,65 @@
+#TV Scene icons
+scene.tv_volume_up:
+  icon: mdi:volume-high
+scene.tv_volume_down:
+  icon: mdi:volume-medium
+scene.Turn_Tv_On:
+  icon: mdi:flash
+scene.Turn_Tv_Off:
+  icon: mdi:flash-off
+scene.TV_Channel_Up:
+  icon: mdi:arrow-up-bold
+scene.TV_Channel_Down:
+  icon: mdi:arrow-down-bold
+scene.Home_Button_TV:
+  icon: mdi:home
+scene.mute_tv:
+  icon: mdi:volume-off
+
+#Tv Living Room
+switch.mute_tv_1:
+  icon: mdi:volume-off
+  friendly_name: Mute TV
+  emulated_hue: true
+switch.volume_up_tv_1:
+  icon: mdi:volume-high
+  friendly_name: TV Volume Up
+  hidden: yes
+  emulated_hue: true
+  emulated_hue_name: "TV Volume Up"
+switch.volume_down_tv_1:
+  icon: mdi:volume-medium
+  friendly_name: TV Volume Down
+  hidden: yes
+  emulated_hue: true
+  emulated_hue_name: "TV Volume Down"
+switch.turn_off_tv_1:
+  icon: mdi:flash-off
+  friendly_name: Turn TV Off
+  hidden: yes
+  emulated_hue: true
+  emulated_hue_name: "Turn TV Off"
+switch.turn_on_tv_1:
+  icon: mdi:flash-on
+  friendly_name: Turn TV On
+  hidden: yes
+  emulated_hue: true
+  emulated_hue_name: "Turn TV On"
+switch.channel_up_tv_1:
+  icon: mdi:arrow-up-bold
+  friendly_name: TV Volume Up
+  hidden: yes
+  emulated_hue: true
+  emulated_hue_name: "TV Channel Up"
+switch.channel_down_tv_1:
+  icon: mdi:arrow-down-bold
+  friendly_name: TV Volume Down
+  hidden: yes
+  emulated_hue: true
+  emulated_hue_name: "TV Channel Down"
+switch.tv_home_1:
+  icon: mdi:home
+  friendly_name: Home Button on TV
+  hidden: yes
+  emulated_hue: true
+  emulated_hue_name: "Home Button on TV"

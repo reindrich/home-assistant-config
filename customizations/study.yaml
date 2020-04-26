@@ -1,0 +1,13 @@
+# Study
+switch.study_desk_lamp:
+  friendly_name: Desk Lamp
+  icon: mdi:lamp
+
+# Motion Sensor
+switch.motion_sensor_study:
+  icon: mdi:human-greeting
+
+# Wifi Router
+switch.study_wifi_plug:
+  friendly_name: Wifi Router
+  icon: mdi:wifi
